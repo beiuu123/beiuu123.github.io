@@ -1,27 +1,68 @@
 body {
-  background: #6c373f;
-  display: flex;
-  justify-content: center;
-  }
-
-#alice-container {
-  width: 90vh;
-  display: grid;
-  place-items: center;
-  grid-template-areas:
-    "a1 . ."
-    ". a2 ."
-    ". . a3";
+    margin: 0;
+    background-image: url('https://rs.wzznft.com/i/2024/11/06/don0x3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-#alice1 {
-  grid-area: a1;
+#game-container {
+    width: 800px;
+    height: 600px;
+    position: relative;
 }
 
-#alice2 {
-  grid-area: a2;
+.character {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
 }
 
-#alice3 {
-  grid-area: a3;
+.monster {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.library {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+}
+
+.temple {
+    width: 30px;
+    height: 30px;
+    border-bottom: 30px solid yellow;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+}
+
+.treasure {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    position: absolute;
+}
+
+.treasure-image {
+    display: none;
+    position: absolute;
+    width: 800px;
+    /* 增大宽度 */
+    height: 800px;
+    /* 增大高度 */
+}
+
+.cave {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    position: absolute;
 }
